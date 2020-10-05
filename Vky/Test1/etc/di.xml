@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Vky\Test1\Api\Data\GridInterface" type="Vky\Test1\Model\Test1" />
+ 
+    <virtualType name="Vky\Test1\Model\ResourceModel\Test1\Test1\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">vky_test1</argument>
+            <argument name="resourceModel" xsi:type="string">Vky\Test1\Model\ResourceModel\Test1</argument>
+        </arguments>
+    </virtualType>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="test1_record_grid_list_data_source" xsi:type="string">Vky\Test1\Model\ResourceModel\Test1\Test1\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

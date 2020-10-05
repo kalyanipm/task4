@@ -1,0 +1,32 @@
+
+<form class="" action="<?php echo $block->getBaseUrl().'test1/index/save'; ?>" id="vky-test-form" method="post">
+    <fieldset class="fieldset">
+        <legend class="legend"><span>Test Form</span></legend><br>
+        <div class="field note no-label">Fill your details</div>
+        <div class="field name">
+            <label class="label" for="name"><span>Name</span></label>
+            <div class="control">
+                <input name="name" id="name" title="Name" value="" class="input-text" type="text">
+            </div>
+        </div>
+        <div class="field mobile">
+            <label class="label" for="mobile"><span>Mobile number</span></label>
+            <div class="control">
+                <input name="mobile" id="mobile" title="Mobile" value="" class="input-text" type="text">
+            </div>
+        </div>
+        <div class="field address">
+            <label class="label" for="address"><span>Address</span></label>
+            <div class="control">
+                <textarea name="address" id="address" title="Address" class="input-text" cols="5" rows="3"></textarea>
+            </div>
+        </div>
+    </fieldset>
+    <div class="actions-toolbar">
+        <div class="primary">
+            <button type="submit" title="Submit" class="action submit primary">
+                <span>Submit</span>
+            </button>
+        </div>
+    </div>
+</form>
